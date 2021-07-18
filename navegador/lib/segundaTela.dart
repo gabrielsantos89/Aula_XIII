@@ -41,14 +41,17 @@ class _SegundaTelaState extends State<SegundaTela> {
             leading: Image.asset("imagens/drum.png"),
             title: Text("Bateria - Ian Paice"),
           ),
-          RaisedButton(
-            child: Text("Voltar"),
-              onPressed: (){
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => TerceiraTela())
-                );
-          })
+          Padding(
+              padding: EdgeInsets.all(100.0),
+              child: RaisedButton(
+                child: Text("Smoke in The Water",style: TextStyle(color: Colors.redAccent),),
+                onPressed: (){
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => TerceiraTela()));
+              },
+            )
+          ),
         ],
       ),
     );

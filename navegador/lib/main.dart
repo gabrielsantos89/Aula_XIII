@@ -21,14 +21,17 @@ class _HomeState extends State<Home> {
         title: Text("Deep Purple"),
       ),
       body: Center(
-        child: ElevatedButton(
-          child: Text("Avançar"),
-          onPressed: (){
-            Navigator.push(context,
+        child: Padding(
+          padding: EdgeInsets.all(100),
+          child: ElevatedButton(
+            child: Text("Avançar"),
+            onPressed: (){
+              Navigator.push(context,
                 MaterialPageRoute(builder: (context) => SegundaTela()),
-            );
-          },
-        ),
+              );
+            },
+          ),
+        )
       ),
       backgroundColor: Colors.deepPurple,
     );
